@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .table-employee
+        {
+            width: 500px;
+            boder-collapsed: collapse;
+             .table-employee tr,td{
+                border: 1px solid black;
+            }
+            #table-header
+            {
+                background-color: blueviolet;
+                color: red;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<form action="" method="post" enctype="multipart/form-data">
+    <h2>login</h2>
+    <div>
+    <label for="email">Email</label>
+    <input id="email" name="email" type="text">
+    </div>
+    <div>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="text">
+    </div>
+    <div>
+        <input id="remember-me" name="remember-me" type="checkbox">
+        <label for="remember-me">Remember me</label>
+    </div>
+    <div>
+        <label for="avatar">Avatar</label>
+        <input type="file" id="avatar" name="avatar">
+    </div>
+    <button type="submit">Login</button>
+    <button type="reset">Clear</button>
+
+
+</form>
+<table class="table-employee">
+    <caption>Employee List</caption>
+    <tr id="table-header">
+        <td>STT</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Phone</td>
+    </tr>
+    <tr>
+        <td colspan="=2">1 teo</td>
+
+        <td>NLL</td>
+        <td>123</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>B</td>
+        <td>ASF</td>
+        <td>345</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td rowspan="2">C D</td>
+        <td>GSD</td>
+        <td>152</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>GDF</td>
+        <td>9876</td>
+    </tr>
+</table>
+
+</body>
+</html>
